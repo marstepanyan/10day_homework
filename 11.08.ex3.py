@@ -1,0 +1,14 @@
+def insertion_sort(lst):
+    for i in range(1, len(lst)):
+        key = lst[i]
+        j = i - 1
+        while j >= 0 and key < lst[j]:
+            lst[j+1] = lst[j]
+            j -= 1
+        lst[j+1] = key
+
+    return lst
+
+
+lst1 = [3, 0, 7, 1, 5]
+print(insertion_sort(lst1))
