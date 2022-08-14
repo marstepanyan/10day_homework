@@ -1,5 +1,5 @@
 def square_of_sum(n):
-    return (n * (n + 1)) // 2
+    return ((n * (n + 1)) // 2) ** 2
 
 
 def sum_of_squares(n):
