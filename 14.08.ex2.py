@@ -1,6 +1,3 @@
-# NOT FINISHED
-
-
 def merge(lst1, m, lst2, n):
     i = 0
     j = 0
@@ -13,13 +10,13 @@ def merge(lst1, m, lst2, n):
             j += 1
 
         else:
-            i += 1
-
-            if i > m + j:
+            if i >= m + j:
                 lst1.insert(i, lst1[-1])
                 lst1.pop()
                 lst1[i] = lst2[j]
                 j += 1
+
+            i += 1
 
     return lst1
 
